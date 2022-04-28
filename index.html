@@ -338,23 +338,6 @@
 
 <!--  -->
 
-<script>
-  /* 标签页标题切换 */
-  var originTitle = document.title;
-  var titleTime;
-  document.addEventListener("visibilitychange", function () {
-    if (document.hidden) {
-      document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-      clearTimeout(titleTime);
-    } else {
-      document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-      titleTime = setTimeout(function () {
-        document.title = originTitle;
-      }, 2000);
-    }
-  });
-</script>
-
 
     
 <div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
@@ -452,20 +435,6 @@
 
     
     	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="https://ksmeow.moe" target="_blank" 
-                class="search-title" title="KSkun的博客">
-                
-                  <img src="https://ksmeow.moe/favicon.ico">
-                
-                KSkun的博客
-              </a>
-            </li>
-          
-        </ul>
   		
     	</section>
     
